@@ -22,34 +22,40 @@ Efficient for complex patterns with limited labeled data.
 
 Utilizes the powerful DeepSeek-R1-Distill-LLaMA-70B model for enhanced performance.
 
-📂 Folder Structure
-├── training/
-│   ├── processor_bert.py
-│   ├── processor_llm.py
-│   ├── processor_regex.py
-│   └── models/
-│       └── (Saved models: Sentence Transformer, Logistic Regression)
-│
-├── resources/
-│   ├── Sample CSV files (for testing)
-│   ├── Output files (classified results)
-│   └── Screenshots (demonstrating results)
-│
-├── classify.py
-├── server.py
-├── requirements.txt
-├── README.md
+📂 Folder Structure 
+
+├── training/ 
+
+├── processor_bert.py
+
+├── processor_llm.py 
+
+├── processor_regex.py 
+
+ └── models/ │ └── (Saved models)
+
+ ├── resources/ │ ├── Sample CSV files (for testing) 
+
+ ├── Output files (classified results)
+
+ └── Screenshots (demonstrating results)
+
+├── classify.py 
+
+├── server.py 
+
+├── requirements.txt 
+
+├── README.md 
+
 └── .gitignore
 
 ⚙️ Setup Instructions
 
-1. Install Dependencies
+Install Dependencies
+Ensure Python is installed, then run: pip install -r requirements.txt
 
-Ensure Python is installed, then run:
-pip install -r requirements.txt
-
-Step 2: Run the Streamlit App
-streamlit run server.py
+Step 2: Run the Streamlit App streamlit run server.py
 
 📊 Usage Instructions
 
@@ -65,7 +71,8 @@ The system will generate a CSV file with an additional column:
 
 target_label — The predicted label for each log entry.
 
-🖥️ Demo Screenshot
+🖥️ Demo Screenshot 
+
 ![Screenshot 2025-03-12 at 8 51 30 PM](https://github.com/user-attachments/assets/d840fbcf-a5dc-4efa-a46e-1b21949d59e3)
 
 🔬 Models Used
@@ -78,6 +85,8 @@ DeepSeek-R1-Distill-LLaMA-70B for improved generalization in low-data scenarios.
 
 📈 Key Achievements
 
-✅ Successfully combines multiple classification techniques for improved accuracy.
+✅ Successfully combines multiple classification techniques for improved accuracy. 
+
 ✅ Demonstrates strong adaptability across predictable, complex, and noisy log data.
-✅ Scalable and efficient implementation to handle large log datasets.
+
+ ✅ Scalable and efficient implementation to handle large log datasets.
